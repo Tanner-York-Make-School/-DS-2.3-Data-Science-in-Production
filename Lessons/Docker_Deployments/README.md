@@ -1,0 +1,1 @@
+This lesson occured over to classes where we learned how to create and deploy a machine learning or deep learning model to production using Keras/Tesorflow, Flask, FLask Restplus, Docker, and AWS. The final product can be found in the mnist-cnn-deployment folder.
