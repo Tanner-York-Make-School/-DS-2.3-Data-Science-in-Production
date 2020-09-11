@@ -10,8 +10,8 @@ from flask_restplus import Api, Resource, fields
 from keras.models import load_model
 from keras.preprocessing.image import img_to_array
 
-app = Flask(__name__)
-api = Api(app, version='1.0', title='MNIST Classification',
+application = Flask(__name__)
+api = Api(application, version='1.0', title='MNIST Classification',
           description='CNN for MNIST')
 name_space = api.namespace('Make_School', description='Methods')
 
@@ -43,4 +43,5 @@ class CNNPrediction(Resource):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    application.debug = True
+    application.run()
